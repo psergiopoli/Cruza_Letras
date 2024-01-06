@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.title {
+    float: top;
+    font-family: 'Courier New', Courier, monospace;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#time {
+    color: #e79315;
+}
+
+#trys {
+    color: #b92410;
+}
+
+#time, #trys {
+    font-size: 25px;
+    
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#message h2 {
+    color: #27ae60;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.puzzle {
+    display: grid;
+    grid-template-columns: 500px;
+    gap: 2px;
+}
+
+.line {
+    display: grid;
+    grid-template-columns: repeat(12, 40px);
+    grid-template-rows: 40px;
+    gap: 2px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+}
+
+.cell input {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.correct {
+    background-color: #a0d468; /* Cor de fundo para células corretas */
+}
+
+.wrong {
+    background-color: #ed5565; /* Cor de fundo para células incorretas */
+}
+
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    width: 20vh;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.tooltip p {
+    margin: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #888;
+}
+
+#show-tooltip {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+#show-tooltip:hover + .tooltip,
+.tooltip:hover {
+    display: block;
+    z-index: 1000;
+}
