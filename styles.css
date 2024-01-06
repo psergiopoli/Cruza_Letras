@@ -107,12 +107,12 @@ input::placeholder {
 }
 
 .tooltip {
-    width: 20vh;
+    width: 15vh;
     display: none;
     position: absolute;
     top: 100%;
-    left: 20%;
-    transform: translateX(-20%);
+    left: 0%;
+    transform: translateX(-0%);
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
