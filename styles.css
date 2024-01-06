@@ -117,3 +117,21 @@ body {
     display: block;
     z-index: 1000;
 }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .creditos {
+    font-size: 14px;
+  }
+  
+  .autor {
+    font-weight: bold;
+    color: #a2cac8;
+  }
