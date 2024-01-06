@@ -89,6 +89,11 @@ body {
     font-size: 14px;
 }
 
+input::placeholder {
+    color: black;
+  }
+  
+
 .correct {
     background-color: #a0d468; /* Cor de fundo para células corretas */
 }
